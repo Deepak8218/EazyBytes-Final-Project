@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+/* .Navigation {
+    background-color: ghostwhite;
+    position: static;
+    border-radius: 20px;
+    margin: 40px 200px 0 200px;
+    display: flex;
+}
+
+.Navigation .logo {
+    text-decoration: none;
+    width: 100%;
+    margin-left: 50px;
+    display: flex;
+    cursor: pointer;
+}
+
+.Navigation .logo img {
+    margin: 15px 2px 15px 0;
+    width: 65px;
+}
+
+.Navigation .logo p {
+    font-family: 'Potta One', cursive;
+    color: #017fbe;
+    margin: 0 auto;
+    margin-left: 5px;
+    font-size: 65px;
+}
+
+.Navigation ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 80px;
+    margin: auto;
+}
+
+.Navigation .links {
+    width: 70px;
+    height: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 10px 15px 15px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #017fbe;
+    color: ghostwhite;
+} */
+
+
+
+/* Main Navigation container */
+.Navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff; /* Primary color */
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Logo container */
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .logo img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .logo p {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Navigation Links */
+  .Navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .links {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .links:hover {
+    background-color: white;
+    color: #007bff;
+    border-color: #8d4d6c;
+    transform: scale(1.05);
+  }
+  
+  .links:active {
+    background-color: #c48686;
+    color: white;
+    border-color: #942a00;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .Navigation {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .logo {
+      margin-bottom: 15px;
+    }
+  
+    .Navigation ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .links {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+
