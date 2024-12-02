@@ -1,12 +1,14 @@
 const eventServices = {
     get: async function(limit) {
-        const promise = await fetch(`http://localhost:4000/event?limit=${limit}`);
+        // const promise = await fetch(`http://localhost:4000/event?limit=${limit}`);
+        const promise = await fetch(`https://eazy-bytes-final-project.vercel.app/event?limit=${limit}`);
         const events = await promise.json();
 
         return events;
     },
     create: function(data) {
-        return fetch('http://localhost:4000/event/create', {
+        // return fetch('http://localhost:4000/event/create', {
+        return fetch('https://eazy-bytes-final-project.vercel.app/event/create', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
@@ -17,7 +19,8 @@ const eventServices = {
     },
     edit: function (id, data) {
         debugger;
-        return fetch('http://localhost:4000/event/edit/' + id, {
+        // return fetch('http://localhost:4000/event/edit/' + id, {
+         return fetch('https://eazy-bytes-final-project.vercel.app/event/edit/' + id, {
             method: 'PUT',
             body: JSON.stringify(data),
             headers: {
@@ -27,13 +30,15 @@ const eventServices = {
         }).then(res => res.json());
     },
     delete: function (id) {
-        return fetch('http://localhost:4000/event/delete/' + id, {
+        // return fetch('http://localhost:4000/event/delete/' + id, {
+        return fetch('https://eazy-bytes-final-project.vercel.app/event/delete/' + id, {
             method: 'DELETE',
             credentials: 'include'
         }).then(res => res.json());
     },
     like: function (id) {
-        return fetch('http://localhost:4000/event/like/' + id, {
+        // return fetch('http://localhost:4000/event/like/' + id, {
+        return fetch('https://eazy-bytes-final-project.vercel.app/event/like/' + id, {
             method: 'PUT',
             headers: {
                 'Content-type': 'application/json'
@@ -42,7 +47,8 @@ const eventServices = {
         }).then(res => res.json());
     },
     dislike: function (id) {
-        return fetch('http://localhost:4000/event/dislike/' + id, {
+        // return fetch('http://localhost:4000/event/dislike/' + id, {
+            return fetch('https://eazy-bytes-final-project.vercel.app/event/dislike/' + id, {
             method: 'PUT',
             headers: {
                 'Content-type': 'application/json'
@@ -51,7 +57,8 @@ const eventServices = {
         }).then(res => res.json());
     },
     details: async function (id) {
-        const promise = await fetch(`http://localhost:4000/event/details/${id}`, {
+        // const promise = await fetch(`http://localhost:4000/event/details/${id}`, {
+         const promise = await fetch(`https://eazy-bytes-final-project.vercel.app/event/details/${id}`, {
             method: 'GET',
             headers: {
                 'Content-type': 'application/json'
