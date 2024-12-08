@@ -31,22 +31,7 @@ const Home = ({ isLoggedIn }) => {
             isMounted = false; // Cleanup function to prevent updates if unmounted
         };
     }, [isLoggedIn]); 
-
-
-
-
-    // useEffect(() => {
-    //     if (isLoggedIn) {
-    //         eventServices.get().then(ev => {
-    //             setEvents(ev);
-    //         })
-    //     } else {
-    //         eventServices.get(3).then(ev => {
-    //             setEvents(ev);
-    //         })
-    //     }
-    // });
-
+    
     const renderEvents = () => {
         if (isLoggedIn) {
             return events.map(event => {

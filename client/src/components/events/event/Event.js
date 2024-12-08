@@ -66,11 +66,6 @@ const Event = ({ event, isAdmin, isLiked, isLoggedIn }) => {
                     <p className="description">{event.description}</p>
                 </div>
                 </div>
-
-
-
-                {/* <p className="name">{event.name}</p>
-            <p className="description">{event.description}</p> */}
                 {event.admin.firstName ?
                     <div className="creator">
                         <span>Creator: </span>
